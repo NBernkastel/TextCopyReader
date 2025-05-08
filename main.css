@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(33, 33, 33);
+    color: #333;
+    padding: 20px;
+  }
+  
+  #content {
+    margin-left: 60%;
+    writing-mode: vertical-rl;
+    white-space: pre-wrap;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background: rgb(33, 33, 33);
+    border-radius: 8px;
+    color: white;
+    font-size: 36px;
+    font-family:'Times New Roman', Times, serif;
+  }

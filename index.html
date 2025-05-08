@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clipboard Monitor</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="content"><p>空く</p></div>
+
+  <script>
+    const ws = new WebSocket('ws://localhost:8080');
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      document.getElementById('content').textContent = data.text;
+    };
+  </script>
+</body>
+</html>
