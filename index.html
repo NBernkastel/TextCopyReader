@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div id="content"><p>空く</p></div>
-
+  <div id="pastcontent">先に</div>
+  <div id="content">空く</div>
   <script>
+    let pastdata = null
     const ws = new WebSocket('ws://localhost:8080');
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
       document.getElementById('content').textContent = data.text;
+      document.getElementById('pastcontent').textContent = pastdata;
+      pastdata = data.text
+      console.log(pastdata)
     };
   </script>
 </body>

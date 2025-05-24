@@ -6,8 +6,6 @@ body {
   }
   
   #content {
-    margin-left: 60%;
-    writing-mode: vertical-rl;
     white-space: pre-wrap;
     border: 2px solid #ccc;
     padding: 10px;
@@ -15,5 +13,13 @@ body {
     border-radius: 8px;
     color: white;
     font-size: 36px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  #pastcontent {
+    white-space: pre-wrap;
+    padding: 10px;
+    background: rgb(33, 33, 33);
+    color: rgba(240, 240, 240, 0.781);
+    font-size: 27px;
     font-family:'Times New Roman', Times, serif;
   }
